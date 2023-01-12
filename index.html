@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <title>site Home</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <title>site Home</title>
 </head>
-<body>
-    <!-- hero header -->
-    <section class="hero is-small is-primary">
-        <div class="hero-body">
-          <p class="title">
-            Site name
-          </p>
-          <p class="subtitle">
-           catchy tagline!
-          </p>
-        </div>
-      </section>
 
-      <!-- nav bar -->
-      <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item">
-            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-          </a>
-      
-        </div>
-      
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-            
-      
+<body class="has-navbar-fixed-top">
+  <section class="hero is-danger =is-info is-large">
+    <div class="hero-head">
+      <nav class="navbar is-danger">
+        <div class="container">
+          <div class="navbar-brand">
             <a class="navbar-item">
-              Recipes
+              <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
             </a>
-
-            <a class="navbar-item">
-                Restaurants
-            </a>
+            <span class="navbar-burger" data-target="navbarMenuHeroB">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
           </div>
-      
-          <div class="navbar-end">
-            <div class="navbar-brand">
-                <a class="navbar-item">
-                  <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-                </a>
-            
-              </div>
+          <div id="navbarMenuHeroB" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-active">
+                Home
+              </a>
+              <a class="navbar-item">
+                Recipes
+              </a>
+              <a class="navbar-item">
+                Restaurants
+              </a>
+            </div>
           </div>
         </div>
       </nav>
+    </div>
 
+    <div class="hero-body hero-image">
+      <div class="container has-text-centered">
+        <p class="title">
+          Magic Eats
+        </p>
+        <p class="subtitle">
+          Eat dat food
+        </p>
+      </div>
+    </div>
+
+  </section>
 
 
 </body>
+<script src="./assets/script.js"></script>
+
 </html>

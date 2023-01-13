@@ -89,22 +89,53 @@ getprice = (id) => {
 
 
 //link for finding resaurants 
-  getRecipies = (foodType) => {
+  getRecID = (foodType) => {
 
   fetch('https://api.spoonacular.com/recipes/complexSearch?query='+ foodType +'&number=10&apiKey=965b1b05045a4605a4a66144db0c2500')
-    .then(response => response.json())
-    .then(response => console.log(response))
-    .catch(err => console.error(err))
+    .then(function (response) {
+     
+      return response.json()
+    })
+    .then(function (recData) {
+      console.log(recData)
+      getRecipe(recData)
+        
+    })
+}
 
+
+getRecipe = (foodData) => {
+
+  for (let i = 0; i < 10; i++) {
+  var recID = foodData.results[i].id
+  console.log(recID)
+
+  fetch('https://api.spoonacular.com/recipes/'+ recID +'/information?apiKey=965b1b05045a4605a4a66144db0c2500')
+    .then(function (response) {
+     
+      return response.json()
+    })
+    .then(function (recData) {
+      console.log(recData)
+      appendLink(recData)
+    })
+
+    appendLink = (recInfo) => {
+      var title = recInfo.title
+      var pic = recInfo.image
+      var link = recInfo.sourceUrl
+
+    }
   }
 
+}
 
     // Search Button
 
     searchbtn.addEventListener("click", function (event) {
       event.preventDefault()
     
-      getRecipies(city.value)
+      getRecID(city.value)
 
       // getLocation(city.value)
     

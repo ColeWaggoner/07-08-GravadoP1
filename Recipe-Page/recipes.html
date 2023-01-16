@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <title>site Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Recipes</title>
 </head>
-
-<body class="has-navbar-fixed-top body">
+<body class="">
   <section class="hero is-danger =is-info is-large">
     <div class="hero-head">
       <nav class="navbar is-danger">
@@ -32,9 +30,6 @@
                 Home
               </a>
               <a class="navbar-item">
-                Recipes
-              </a>
-              <a class="navbar-item">
                 Restaurants
               </a>
             </div>
@@ -53,35 +48,49 @@
         </p>
       </div>
     </div>
-
   </section>
 
 
-  <div class="columns">
-    <div class="column">
+  <form id = "info-form">
+    <input type = "text" name = "food" id="foodName" class="form-control" placeholder="Pasta">
+    <input type = "submit" id = "form-submit">
+  </form>
+
+ <!-- "Recipes" header -->
+ <section class="hero is-danger is-small">
+  <div class="hero-body">
+    <p class="title has-text-centered">
       Recipes
-        <div class="recCard"></div>
+    </p>
+  </div>
+</section>
+<!-- spacer column -->
+<div class="columns">
+  <div class="column">
+  </div>
+</div>
+ <!-- columns -->
+  <div class="columns is-variable is-8">
+    <!-- column 1 -->
+    <div class="column is-one-fifth"></div>
+    <!-- column 2 -->
+    <div class="column">
+<!-- recipes card left-->
+      <div class="cardLeft"></div>
     </div>
+      
 
     <div class="column">
-      Restaurants
-      <div class="restCard">
+      <!-- recipes card right-->
+        <div class="cardRight"></div>       
     </div>
+    <!-- column 5 -->
+    <div class="column is-one-fifth"></div>
   </div>
 
+  
+  <script src="./RecScript.js"></script>
+  
 
-    <div class="">
-      <div class="">
-        <h3 class="">Search for a City:</h3>
-  
-        <!-- Input and button prompts -->
-        <form id = "info-form">
-          <input type = "text" name = "city" id="cityName" class="form-control" placeholder="Orlando">
-          <input type = "text" name = "food" id="foodName" class="form-control" placeholder="Pasta">
-          <input type = "submit" id = "form-submit">
-        </form>
-  
-    <script src="./assets/script.js"></script>
 </body>
-
 </html>

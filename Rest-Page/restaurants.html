@@ -1,75 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Restaurants</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Homepage/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <title>Restaurants</title>
 </head>
-<body class="has-navbar-fixed-top">
-  <section class="hero is-danger =is-info is-large">
+
+<body class="has-navbar">
+  <section class="hero is-danger is-large">
     <div class="hero-head">
       <nav class="navbar is-danger">
-        <div class="container">
-          <div class="navbar-brand">
-            <a class="navbar-item">
-              <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <img src="../Homepage/assets/GravagoLogo.png " width="45" alt="Logo">
 
+          </a>
+          <span class="navbar-burger" data-target="navbarMenuHeroB">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroB" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-active" href="../Homepage/index.html">
+              Home
             </a>
-            <span class="navbar-burger" data-target="navbarMenuHeroB">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </div>
-          <div id="navbarMenuHeroB" class="navbar-menu">
-            <div class="navbar-end">
-              <a class="navbar-item is-active">
-                Home
-              </a>
-              <a class="navbar-item">
-                Recipes
-              </a>
-            </div>
+            <a class="navbar-item" href="../Recipe-Page/recipes.html">
+              Recipes
+            </a>
           </div>
         </div>
       </nav>
     </div>
 
-    <div class="hero-body hero-image">
+    <div class="hero-body hero-image is-large is-info">
       <div class="container has-text-centered">
         <p class="title">
-          Magic Eats
+          Gravado
         </p>
         <p class="subtitle">
-          Eat dat food
+          Find What You Crave
         </p>
       </div>
     </div>
   </section>
 
-<!-- "Restaurants" header -->
-<section class="hero is-danger is-small">
-  <div class="hero-body">
-    <p class="title has-text-centered">
-      Restaurants
-    </p>
+  <!-- "Restaurants" header -->
+  <section class="hero is-danger is-small">
+    <div class="hero-head">
+      <div class="hero-body">
+        <h3 class="">Search for a City:</h3>
+
+        <!-- Input and button prompts -->
+        <form id="info-form">
+          <input type="text" name="city" id="cityName" class="form-control" placeholder="Orlando">
+          <input type="text" name="food" id="foodName" class="form-control" placeholder="Pasta">
+          <input type="submit" id="form-submit">
+        </form>
+        <p class="title has-text-centered">
+          Restaurants
+        </p>
+
+      </div>
+    </div>
+  </section>
+  <!-- spacer column -->
+  <div class="columns">
+    <div class="column">
+    </div>
   </div>
-</section>
-<!-- spacer column -->
-<div class="columns">
-  <div class="column">
-  </div>
-</div>
- <!-- columns -->
+  <!-- columns -->
   <div class="columns is-variable is-8">
     <!-- column 1 -->
     <div class="column is-one-fifth"></div>
     <!-- column 2 -->
     <div class="column">
-<!-- recipes card left-->
+      <!-- recipes card left-->
       <div class="card">
         <div class="card-image">
           <figure class="image is-4by3">
@@ -88,7 +99,7 @@
               <p class="subtitle is-6">@johnsmith</p>
             </div>
           </div>
-      
+
           <div class="content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Phasellus nec iaculis mauris. <a>@bulmaio</a>.
@@ -102,39 +113,40 @@
 
     <div class="column">
       <!-- restaurants card right-->
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
-                      <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <p class="title is-4">John Smith</p>
-                    <p class="subtitle is-6">@johnsmith</p>
-                  </div>
-                </div>
-            
-                <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                  <a href="#">#css</a> <a href="#">#responsive</a>
-                  <br>
-                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                </div>
-              </div>
-            </div>       
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">John Smith</p>
+              <p class="subtitle is-6">@johnsmith</p>
+            </div>
+          </div>
+
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+            <a href="#">#css</a> <a href="#">#responsive</a>
+            <br>
+            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- column 5 -->
     <div class="column is-one-fifth"></div>
   </div>
 
-  
+
 </body>
+
 </html>

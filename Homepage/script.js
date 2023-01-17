@@ -3,8 +3,8 @@ var foodInfo  = document.getElementById("info-form")
 var submitbtn = document.getElementById("form-submit")
 var cardList = document.querySelector(".recCard")
 var resCardList = document.querySelector(".restCard")
-var body = document.querySelector('.body')
-  body.style.backgroundColor = '#788585'
+// var body = document.querySelector('.body')
+  // body.style.backgroundColor = '#788585'
 
 
   //navbar 

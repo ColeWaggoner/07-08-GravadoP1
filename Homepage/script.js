@@ -87,7 +87,7 @@ getprice = (id) => {
 //link for finding recipes 
   getRecID = (foodType) => {
 
-  fetch('https://api.spoonacular.com/recipes/complexSearch?query='+ foodType +'&number=1&apiKey=965b1b05045a4605a4a66144db0c2500')
+  fetch('https://api.spoonacular.com/recipes/complexSearch?query='+ foodType +'&number=5&apiKey=965b1b05045a4605a4a66144db0c2500')
     .then(function (response) {
      
       return response.json()
@@ -102,7 +102,7 @@ getprice = (id) => {
 
 getRecipe = (foodData) => {
 
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < 3; i++) {
   var recID = foodData.results[i].id
   console.log(recID)
 
@@ -211,7 +211,7 @@ getRestaurant = (cityInfo) => {
 
   appendResCard = (restInfo) => {
 
-    for (let i = 0; i < 1; i++) {
+    for (let i = 0; i < 3; i++) {
     var name = restInfo.restaurants[i].name
     var picdata = restInfo.restaurants[i].logo_photos[0]
     var rating = restInfo.restaurants[i].weighted_rating_value
@@ -267,6 +267,9 @@ getRestaurant = (cityInfo) => {
 
     submitbtn.addEventListener("click", function (event) {
       event.preventDefault()
+
+      cardList.innerHTML = ""
+      resCardList.innerHTML= ""
     
       getRecID(foodInfo.food.value)
 

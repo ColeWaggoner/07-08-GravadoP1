@@ -158,6 +158,9 @@ getRecipe = (foodData) => {
 
     submitbtn.addEventListener("click", function (event) {
       event.preventDefault()
+      
+      lColumn.innerHTML = ""
+      rColumn.innerHTML= ""
     
       getRecID(foodInfo.food.value)
 

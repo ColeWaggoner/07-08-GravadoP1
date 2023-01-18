@@ -166,6 +166,8 @@ if (i % 2 !== 0) {
 
     submitbtn.addEventListener("click", function (event) {
       event.preventDefault()
+      lColumn.innerHTML = ""
+      rColumn.innerHTML= ""
     
       getLocation(foodInfo.city.value)
       console.log(foodInfo.city.value)

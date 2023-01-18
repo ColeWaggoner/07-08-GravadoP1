@@ -21,3 +21,7 @@ You can use the NavBar at the top of the screen to navigate to the Recipes, or R
 
 
 ## Screenshots
+![home page](./screenshots/Screenshot%20(2).png)
+![home functions](./screenshots/Screenshot%20(3).png)
+![recipes functions](./screenshots/Screenshot%20(4).png)
+![restaurants functions](./screenshots/Screenshot%20(5).png)

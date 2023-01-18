@@ -2,7 +2,7 @@
 
 .hero-image {
     width: 100%;
-    background-image: url(./assets/various-spices-and-herbs-website-header.jpg);
+    background-image: url(./assets/vegetables-set-left-black-slate.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -26,6 +26,14 @@ h3 {
     font-weight: bold;
     letter-spacing: 1px;
     text-align: center;
+}
+
+.p{
+    color: black;
+    text-decoration-color: black;
+}
+title{
+    color: black;
 }
 
 /* Search bar stylization */

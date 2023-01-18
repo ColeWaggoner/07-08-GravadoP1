@@ -137,7 +137,7 @@ getRecipe = (foodData) => {
       pic.src = picdata;
       if (!recInfo.image) {
         pic.src =
-          "C:/Users/colew/Documents/Classwork/Projects/Project 1/PPC-P1/Homepage/assets/NotFound.png";
+          "C:/Users/colew/Documents/Classwork/Projects/Project 1/PPC-P1/assets/NotFound.png";
       }
 
       cardImage.appendChild(pic);
@@ -215,7 +215,7 @@ getRestaurant = (cityInfo) => {
     });
 
   appendResCard = (restInfo) => {
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 4; i++) {
       var name = restInfo.restaurants[i].name;
       var picdata = restInfo.restaurants[i].logo_photos[0];
       var rating = restInfo.restaurants[i].weighted_rating_value;
@@ -238,9 +238,9 @@ getRestaurant = (cityInfo) => {
       pic.style.maxWidth = "100%";
 
       pic.src = picdata;
-      if (!recInfo.image) {
+      if (!restInfo.restaurants[i].logo_photos[0]) {
         pic.src =
-          "C:/Users/colew/Documents/Classwork/Projects/Project 1/PPC-P1/Homepage/assets/NotFound.png";
+          "C:/Users/colew/Documents/Classwork/Projects/Project 1/PPC-P1/assets/NotFound.png";
       }
 
       cardImage.appendChild(pic);

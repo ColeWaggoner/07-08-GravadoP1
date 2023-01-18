@@ -66,6 +66,10 @@ getRecipe = (foodData) => {
         
 
       pic.src = picdata
+      if (!recInfo.image) {
+        pic.src =
+          "C:/Users/colew/Documents/Classwork/Projects/Project 1/PPC-P1/Homepage/assets/NotFound.png";
+      }
 
       cardImage.appendChild(pic)
       mainCard.append(cardImage)
@@ -129,6 +133,10 @@ getRecipe = (foodData) => {
               
       
             pic.src = picdata
+            if (!recInfo.image) {
+              pic.src =
+                "C:/Users/colew/Documents/Classwork/Projects/Project 1/PPC-P1/Homepage/assets/NotFound.png";
+            }
       
             cardImage.appendChild(pic)
             mainCard.append(cardImage)

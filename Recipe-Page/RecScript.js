@@ -10,7 +10,7 @@ var rColumn = document.querySelector(".cardRight")
 //link for finding recipes 
   getRecID = (foodType) => {
 
-  fetch('https://api.spoonacular.com/recipes/complexSearch?query='+ foodType +'&number=4&apiKey=965b1b05045a4605a4a66144db0c2500')
+  fetch('https://api.spoonacular.com/recipes/complexSearch?query='+ foodType +'&number=4&apiKey=572f8f5db10547c1b35149ddc0d3061c')
     .then(function (response) {
      
       return response.json()
@@ -30,7 +30,7 @@ getRecipe = (foodData) => {
   var recID = foodData.results[i-4].id
   console.log(recID)
 
-  fetch('https://api.spoonacular.com/recipes/'+ recID +'/information?apiKey=965b1b05045a4605a4a66144db0c2500')
+  fetch('https://api.spoonacular.com/recipes/'+ recID +'/information?apiKey=572f8f5db10547c1b35149ddc0d3061c')
     .then(function (response) {
      
       return response.json()
@@ -97,7 +97,7 @@ getRecipe = (foodData) => {
         var recID = foodData.results[i-4].id
         console.log(recID)
       
-        fetch('https://api.spoonacular.com/recipes/'+ recID +'/information?apiKey=965b1b05045a4605a4a66144db0c2500')
+        fetch('https://api.spoonacular.com/recipes/'+ recID +'/information?apiKey=572f8f5db10547c1b35149ddc0d3061c')
           .then(function (response) {
            
             return response.json()

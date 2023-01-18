@@ -40,7 +40,7 @@ getRestaurant = (cityInfo) => {
   console.log(lat)
   console.log(long)
 
-  fetch('https://api.spoonacular.com/food/restaurants/search?cuisine='+ cuisine +'&lat=' + lat + '&lng=' + long + '&apiKey=965b1b05045a4605a4a66144db0c2500')
+  fetch('https://api.spoonacular.com/food/restaurants/search?cuisine='+ cuisine +'&lat=' + lat + '&lng=' + long + '&apiKey=572f8f5db10547c1b35149ddc0d3061c')
   .then(function (response) {
    
     return response.json()

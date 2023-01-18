@@ -83,7 +83,7 @@ getRecID = (foodType) => {
   fetch(
     "https://api.spoonacular.com/recipes/complexSearch?query=" +
       foodType +
-      "&number=4&apiKey=965b1b05045a4605a4a66144db0c2500"
+      "&number=4&apiKey=572f8f5db10547c1b35149ddc0d3061c"
   )
     .then(function (response) {
       return response.json();
@@ -102,7 +102,7 @@ getRecipe = (foodData) => {
     fetch(
       "https://api.spoonacular.com/recipes/" +
         recID +
-        "/information?apiKey=965b1b05045a4605a4a66144db0c2500"
+        "/information?apiKey=572f8f5db10547c1b35149ddc0d3061c"
     )
       .then(function (response) {
         return response.json();
@@ -204,7 +204,7 @@ getRestaurant = (cityInfo) => {
       lat +
       "&lng=" +
       long +
-      "&apiKey=965b1b05045a4605a4a66144db0c2500"
+      "&apiKey=572f8f5db10547c1b35149ddc0d3061c"
   )
     .then(function (response) {
       return response.json();
@@ -274,5 +274,5 @@ submitbtn.addEventListener("click", function (event) {
 
   getRecID(foodInfo.food.value);
 
-  // getLocation(foodInfo.city.value)
+  getLocation(foodInfo.city.value)
 });
